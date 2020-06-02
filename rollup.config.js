@@ -9,7 +9,7 @@ export default {
     name: 'PineClientFetch',
   },
   plugins: [
-    resolve(),
+    resolve({ browser: true }),
     commonjs({ extensions: ['.js'] })
   ],
 };
