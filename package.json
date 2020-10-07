@@ -40,12 +40,13 @@
     "@types/chai-as-promised": "^7.1.2",
     "@types/mocha": "^7.0.2",
     "balena-auth": "^4.0.2",
-    "balena-config-karma": "^2.3.1",
+    "balena-config-karma": "^3.0.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "fetch-ponyfill": "^6.1.0",
     "husky": "^4.2.5",
     "karma": "^5.0.9",
+    "karma-chrome-launcher": "^2.2.0",
     "lint-staged": "^10.1.7",
     "mocha": "^7.2.0",
     "rollup": "^2.10.0",
@@ -53,7 +54,7 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "pinejs-client-core": "^5.7.0"
+    "pinejs-client-core": "^6.9.1"
   },
   "peerDependencies": {
     "balena-auth": "^4.0.2"
