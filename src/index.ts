@@ -1,12 +1,12 @@
-import { PinejsClientCoreFactory } from 'pinejs-client-core';
-export type { PinejsClientCoreFactory } from 'pinejs-client-core';
+import { AnyObject, Params, PinejsClientCore } from 'pinejs-client-core';
+import type BalenaAuth from 'balena-auth';
+export * as PinejsClient from 'pinejs-client-core';
 
 interface BackendParams {
 	/** The browser fetch API implementation or a compatible one */
 	fetch?: typeof fetch;
+	auth?: BalenaAuth;
 }
-
-type PromiseObj = Promise<{}>;
 
 export class RequestError extends Error {
 	public code = 'PineClientFetchRequestError';
@@ -20,15 +20,8 @@ export class RequestError extends Error {
 	}
 }
 
-export default class PineFetch extends PinejsClientCoreFactory(Promise)<
-	PineFetch,
-	PromiseObj,
-	Promise<PinejsClientCoreFactory.PromiseResultTypes>
-> {
-	constructor(
-		params: PinejsClientCoreFactory.Params,
-		public backendParams: BackendParams,
-	) {
+export default class PineFetch extends PinejsClientCore<PineFetch> {
+	constructor(params: Params, public backendParams: BackendParams) {
 		super(params);
 		if (
 			typeof backendParams?.fetch !== 'function' &&
@@ -46,8 +39,8 @@ export default class PineFetch extends PinejsClientCoreFactory(Promise)<
 		...options
 	}: {
 		url: string;
-		body?: PinejsClientCoreFactory.AnyObject;
-	} & PinejsClientCoreFactory.AnyObject) {
+		body?: AnyObject;
+	} & AnyObject) {
 		const normalizedBody =
 			body == null
 				? null
@@ -57,6 +50,17 @@ export default class PineFetch extends PinejsClientCoreFactory(Promise)<
 
 		// Assign to a variable first, otherwise browser fetch errors in case the context is different.
 		const fetchImplementation = this.backendParams?.fetch ?? fetch;
+
+		const { auth } = this.backendParams;
+		if (
+			!options.headers?.authorization &&
+			auth != null &&
+			(await auth.hasKey())
+		) {
+			const key = await auth.getKey();
+			options.headers ??= {};
+			options.headers.authorization = `Bearer ${key}`;
+		}
 
 		const response = await fetchImplementation(url, {
 			...options,
