@@ -1,0 +1,80 @@
+- commits:
+    - subject: Replace balenaCI with flowzone
+      hash: 4ac3f76e1628e7dd705fa23399031eddb4b9558b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+    - subject: Specify node 12 as the minimum supported node engine in the package.json
+      hash: f92ad1a0123d1420b48deb71d834c5cd58ec7561
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+      nested: []
+  version: 0.3.0
+  title: ""
+  date: 2022-09-22T13:34:33.202Z
+- version: 0.2.2
+  date: 2021-06-30T18:41:50Z
+  commits:
+    - hash: ad0fbd57581f573d3c5850731e2a9fb1b270c637
+      author: Thodoris Greasidis
+      footers:
+        see: https://www.flowdock.com/app/rulemotion/pub/threads/trLcZFnSX9fLZn4LiaIv4xuBbah
+        change-type: patch
+      subject: Delete CODEOWNERS
+      body: null
+- version: 0.2.1
+- date: 2020-06-02T13:07:30Z
+- commits:
+    - hash: c9ed866ddb923a28ece6268ef732348688b59793
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Fix the umd build for the latest pinejs client
+- commits:
+    - ? body
+- commits:
+    - hash: 1892ef384f3333c6427b7d649ab4e848964b5b3d
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Test on browser using the umd build
+- commits:
+    - ? body
+- version: 0.2.0
+- date: 2020-06-02T12:30:17Z
+- commits:
+    - hash: ecdcce4b1966e71067c5176ab7d52d6ba78790cb
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Initial code commit
+- commits:
+    - ? body
+- commits:
+    - hash: a0d50de9c297fc91d822a6b08b0aed41abf326e6
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Add test cases
+- commits:
+    - ? body
