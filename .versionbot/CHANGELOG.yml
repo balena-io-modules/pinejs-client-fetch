@@ -1,4 +1,16 @@
 - commits:
+    - subject: Delete redundant .resinci.yml
+      hash: e7f17a175299ce5a20ac142b592535380302470d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+  version: 0.3.1
+  title: ""
+  date: 2022-09-26T12:39:40.956Z
+- commits:
     - subject: Replace balenaCI with flowzone
       hash: 4ac3f76e1628e7dd705fa23399031eddb4b9558b
       body: ""
