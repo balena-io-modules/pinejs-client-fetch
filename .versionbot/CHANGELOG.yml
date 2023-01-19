@@ -1,4 +1,16 @@
 - commits:
+    - subject: "Flowzone: use inherited secrets"
+      hash: 7f896523252c8ea58274792a859cbd72c5691e14
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Page-
+      nested: []
+  version: 1.0.1
+  title: ""
+  date: 2023-01-19T15:41:29.561Z
+- commits:
     - subject: Update to pinejs-client-core 6.x
       hash: 0ba1315c2f99fdca260c4ff780ebbfe80897cda2
       body: |
