@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update to pinejs-client-core 6.x
+      hash: 0ba1315c2f99fdca260c4ff780ebbfe80897cda2
+      body: |
+        Update pinejs-client-core from 5.7.0 to 6.12.3
+      footer:
+        Change-type: major
+        change-type: major
+      author: Pagan Gazzard
+      nested: []
+  version: 1.0.0
+  title: ""
+  date: 2023-01-19T15:13:50.285Z
+- commits:
     - subject: Delete redundant .resinci.yml
       hash: e7f17a175299ce5a20ac142b592535380302470d
       body: ""
@@ -54,7 +67,7 @@
 - commits:
     - subject: Fix the umd build for the latest pinejs client
 - commits:
-    - ? body
+    - body: null
 - commits:
     - hash: 1892ef384f3333c6427b7d649ab4e848964b5b3d
 - commits:
@@ -65,7 +78,7 @@
 - commits:
     - subject: Test on browser using the umd build
 - commits:
-    - ? body
+    - body: null
 - version: 0.2.0
 - date: 2020-06-02T12:30:17Z
 - commits:
@@ -78,7 +91,7 @@
 - commits:
     - subject: Initial code commit
 - commits:
-    - ? body
+    - body: null
 - commits:
     - hash: a0d50de9c297fc91d822a6b08b0aed41abf326e6
 - commits:
@@ -89,4 +102,4 @@
 - commits:
     - subject: Add test cases
 - commits:
-    - ? body
+    - body: null
