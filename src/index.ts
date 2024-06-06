@@ -1,4 +1,5 @@
-import { PinejsClientCore, Params, AnyObject } from 'pinejs-client-core';
+import type { Params, AnyObject } from 'pinejs-client-core';
+import { PinejsClientCore } from 'pinejs-client-core';
 export type { PinejsClientCore } from 'pinejs-client-core';
 
 interface BackendParams {
@@ -19,7 +20,10 @@ export class RequestError extends Error {
 }
 
 export default class PineFetch extends PinejsClientCore<PineFetch> {
-	constructor(params: Params, public backendParams: BackendParams) {
+	constructor(
+		params: Params,
+		public backendParams: BackendParams,
+	) {
 		super(params);
 		if (
 			typeof backendParams?.fetch !== 'function' &&
@@ -43,8 +47,8 @@ export default class PineFetch extends PinejsClientCore<PineFetch> {
 			body == null
 				? null
 				: typeof body === 'object'
-				? JSON.stringify(body)
-				: body;
+					? JSON.stringify(body)
+					: body;
 
 		// Assign to a variable first, otherwise browser fetch errors in case the context is different.
 		const fetchImplementation = this.backendParams?.fetch ?? fetch;
