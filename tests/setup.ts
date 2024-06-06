@@ -1,6 +1,6 @@
 import * as fetchPonyfillFactory from 'fetch-ponyfill';
 import PineFetchNode from '../src/index';
-// tslint:disable-next-line:no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { default: PineFetchBrowser } = require('../build/index.umd');
 
 const API_BASE_URL = 'https://api.balena-cloud.com/';

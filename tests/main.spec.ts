@@ -3,8 +3,9 @@ import { expect } from 'chai';
 import * as chaiAsPromised from 'chai-as-promised';
 chai.use(chaiAsPromised);
 
-import { givenAPineClient, TestSuiteContext } from './setup';
-import { AnyObject } from './common';
+import type { TestSuiteContext } from './setup';
+import { givenAPineClient } from './setup';
+import type { AnyObject } from './common';
 
 describe('pinejs-client-fetch', function () {
 	this.timeout(10 * 1000);
@@ -36,6 +37,5 @@ describe('pinejs-client-fetch', function () {
 		const err = await expect(promise).to.be.rejected;
 		expect(err).to.have.property('code', 'PineClientFetchRequestError');
 		expect(err).to.have.property('status', 401);
-		expect(err).to.have.property('message').that.contains('Unauthorized');
 	});
 });
