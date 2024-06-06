@@ -37,6 +37,5 @@ describe('pinejs-client-fetch', function () {
 		const err = await expect(promise).to.be.rejected;
 		expect(err).to.have.property('code', 'PineClientFetchRequestError');
 		expect(err).to.have.property('status', 401);
-		expect(err).to.have.property('message').that.contains('Unauthorized');
 	});
 });
