@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update dependencies
+      hash: eccd1faf9b94f8a2e899001d22baff267854230c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 1.0.2
+  title: ""
+  date: 2024-06-06T15:49:12.702Z
+- commits:
     - subject: "Flowzone: use inherited secrets"
       hash: 7f896523252c8ea58274792a859cbd72c5691e14
       body: ""
