@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency lint-staged to v16
+      hash: 8278b7f2033b00a50091eff8f3f085001f7919b5
+      body: |
+        Update lint-staged from 15.5.2 to 16.1.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 1.0.4
+  title: ""
+  date: 2025-08-01T01:25:20.371Z
+- commits:
     - subject: Update dependency karma to v6 [SECURITY]
       hash: 3ca9423b39a06d3f4bf354ef9698ff95502df5b8
       body: |
