@@ -1,4 +1,9 @@
-import type { Params, AnyObject } from 'pinejs-client-core';
+import type {
+	Params,
+	AnyObject,
+	Resource,
+	AnyResource,
+} from 'pinejs-client-core';
 import { PinejsClientCore } from 'pinejs-client-core';
 export type { PinejsClientCore } from 'pinejs-client-core';
 
@@ -19,7 +24,13 @@ export class RequestError extends Error {
 	}
 }
 
-export default class PineFetch extends PinejsClientCore<PineFetch> {
+export default class PineFetch<
+	Model extends {
+		[key in keyof Model]: Resource;
+	} = {
+		[key in string]: AnyResource;
+	},
+> extends PinejsClientCore<Model> {
 	constructor(
 		params: Params,
 		public backendParams: BackendParams,
