@@ -1,11 +1,11 @@
 import * as chai from 'chai';
 import { expect } from 'chai';
-import * as chaiAsPromised from 'chai-as-promised';
+import chaiAsPromised from 'chai-as-promised';
 chai.use(chaiAsPromised);
 
-import type { TestSuiteContext } from './setup';
-import { givenAPineClient } from './setup';
-import type { AnyObject } from './common';
+import type { TestSuiteContext } from './setup.ts';
+import { givenAPineClient } from './setup.ts';
+import type { AnyObject } from './common.ts';
 
 describe('pinejs-client-fetch', function () {
 	this.timeout(10 * 1000);

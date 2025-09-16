@@ -1,13 +1,13 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
+		"module": "Node20",
 		"outDir": "build",
 		"noUnusedParameters": true,
 		"noUnusedLocals": true,
 		"removeComments": true,
 		"sourceMap": true,
 		"strict": true,
-		"target": "es2015",
+		"target": "es2023",
 		"lib": [
 			"dom"
 		],

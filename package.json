@@ -2,8 +2,8 @@
   "name": "pinejs-client-fetch",
   "version": "1.1.0",
   "description": "This module provides the nodejs interface for the pinejs API using request.",
+  "type": "module",
   "main": "build/index.js",
-  "browser": "build/index.umd.js",
   "types": "build/index.d.ts",
   "repository": {
     "type": "git",
@@ -24,40 +24,37 @@
     "build/"
   ],
   "engines": {
-    "node": ">=12.0.0",
-    "npm": ">=6.0.0"
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
   },
   "scripts": {
-    "build": "tsc && rollup -c",
+    "build": "tsc",
     "lint": "balena-lint -t tsconfig.dev.json src tests",
     "lint-fix": "balena-lint -t tsconfig.dev.json --fix src tests",
-    "test:node": "mocha -r ts-node/register --reporter spec tests/**/*.spec.ts",
+    "test:node": "mocha --require @swc-node/register/esm-register --reporter spec tests/**/*.spec.ts",
     "test:browser": "karma start",
     "test": "npm run build && npm run test:node && npm run test:browser && npm run lint",
     "prepack": "npm run build",
     "prepare": "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
   },
   "devDependencies": {
-    "@balena/lint": "^8.2.8",
-    "@rollup/plugin-commonjs": "^11.1.0",
-    "@rollup/plugin-node-resolve": "^7.1.3",
-    "@types/chai": "^4.3.20",
-    "@types/chai-as-promised": "^7.1.8",
+    "@balena/lint": "^9.3.6",
+    "@swc-node/register": "^1.11.1",
+    "@swc/core": "^1.13.5",
+    "@types/chai": "^5.2.2",
+    "@types/chai-as-promised": "^8.0.2",
     "@types/mocha": "^10.0.10",
     "balena-config-karma": "^4.0.2",
-    "chai": "^4.5.0",
-    "chai-as-promised": "^7.1.2",
-    "fetch-ponyfill": "^7.1.0",
+    "chai": "^6.0.1",
+    "chai-as-promised": "^8.0.2",
     "husky": "^9.1.7",
     "karma": "^6.4.4",
     "lint-staged": "^16.1.6",
     "mocha": "^11.7.2",
-    "rollup": "^2.79.2",
-    "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "pinejs-client-core": "^6.15.11"
+    "pinejs-client-core": "^8.3.2"
   },
   "versionist": {
     "publishedAt": "2025-09-16T15:59:51.989Z"

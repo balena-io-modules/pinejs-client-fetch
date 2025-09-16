@@ -1,11 +1,6 @@
-import type { Params, AnyObject } from 'pinejs-client-core';
+import type { AnyObject, Resource, AnyResource } from 'pinejs-client-core';
 import { PinejsClientCore } from 'pinejs-client-core';
 export type { PinejsClientCore } from 'pinejs-client-core';
-
-interface BackendParams {
-	/** The browser fetch API implementation or a compatible one */
-	fetch?: typeof fetch;
-}
 
 export class RequestError extends Error {
 	public code = 'PineClientFetchRequestError';
@@ -19,22 +14,13 @@ export class RequestError extends Error {
 	}
 }
 
-export default class PineFetch extends PinejsClientCore<PineFetch> {
-	constructor(
-		params: Params,
-		public backendParams: BackendParams,
-	) {
-		super(params);
-		if (
-			typeof backendParams?.fetch !== 'function' &&
-			typeof fetch !== 'function'
-		) {
-			throw new Error(
-				'No fetch implementation provided and native one not available',
-			);
-		}
-	}
-
+export default class PineFetch<
+	Model extends {
+		[key in keyof Model]: Resource;
+	} = {
+		[key in string]: AnyResource;
+	},
+> extends PinejsClientCore<Model> {
 	async _request({
 		url,
 		body,
@@ -50,10 +36,7 @@ export default class PineFetch extends PinejsClientCore<PineFetch> {
 					? JSON.stringify(body)
 					: body;
 
-		// Assign to a variable first, otherwise browser fetch errors in case the context is different.
-		const fetchImplementation = this.backendParams?.fetch ?? fetch;
-
-		const response = await fetchImplementation(url, {
+		const response = await fetch(url, {
 			...options,
 			body: normalizedBody,
 		});
@@ -67,6 +50,6 @@ export default class PineFetch extends PinejsClientCore<PineFetch> {
 			}
 			throw new RequestError(responseBody, response.status, response.headers);
 		}
-		return response.json();
+		return await response.json();
 	}
 }

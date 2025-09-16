@@ -1,7 +1,7 @@
-const getKarmaConfig = require('balena-config-karma');
-const packageJSON = require('./package.json');
+import getKarmaConfig from 'balena-config-karma';
+import packageJSON from './package.json' with { type: 'json' };
 
-module.exports = (config) => {
+export default (config) => {
 	const karmaConfig = getKarmaConfig(packageJSON);
 	karmaConfig.logLevel = config.LOG_INFO;
 	karmaConfig.webpack.experiments = {
