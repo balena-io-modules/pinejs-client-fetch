@@ -1,5 +1,5 @@
-import * as fetchPonyfillFactory from 'fetch-ponyfill';
-import PineFetch from '../src/index';
+import fetchPonyfillFactory from 'fetch-ponyfill';
+import PineFetch from '../build/index.js';
 
 const API_BASE_URL = 'https://api.balena-cloud.com/';
 const API_VERSION = 'v5/';
