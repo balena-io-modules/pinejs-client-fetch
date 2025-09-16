@@ -1,4 +1,286 @@
 - commits:
+    - subject: Update dependencies
+      hash: f4d90680bb2ffeff0fb50b25b8e1aa4c9674b221
+      body: |
+        Update pinejs-client-core from 6.14.7 to 6.15.11
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: Fix most lint warnings
+              hash: 9562c9df8f231877d06b46ca673fbaeb7e144d2b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.11
+          title: ""
+          date: 2024-08-12T22:37:35.394Z
+        - commits:
+            - subject: Fix `getOrCreate` and `upsert` typing for the `body` property
+              hash: a1ce21a7c55c04f55f3b8025d19076a49541a205
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.10
+          title: ""
+          date: 2024-07-08T16:05:56.800Z
+        - commits:
+            - subject: Export `ExpandableStringKeyOf` typing
+              hash: 17f1424d31069a882bb288cf418a01e83b60e806
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.9
+          title: ""
+          date: 2024-07-05T16:24:57.847Z
+        - commits:
+            - subject: Improve typings of `prepare` when used to `GET`
+              hash: 06f3fbecc514367900f07f83dbd61796e870abcf
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.8
+          title: ""
+          date: 2024-07-05T15:42:56.455Z
+        - commits:
+            - subject: Use `OptionsToResponse` to avoid most of the `get` overloads
+              hash: 7562b1aeb69a3ce97362ed0799b4c211948acc7e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.7
+          title: ""
+          date: 2024-06-27T17:04:08.151Z
+        - commits:
+            - subject: Add support for nested $expand response types and $count expands
+              hash: 8b00172db2e150f8813d2080d0f19b5a2c2c3066
+              body: |
+                Update @balena/abstract-sql-to-typescript from 3.2.1 to 3.2.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.6
+          title: ""
+          date: 2024-06-25T13:53:50.690Z
+        - commits:
+            - subject: Select all non-expanded fields when there is no $select
+              hash: 7abf51ecd4aea620cd9d616d5ec1843c1c4ba5df
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.5
+          title: ""
+          date: 2024-06-25T11:09:05.055Z
+        - commits:
+            - subject: Update dependencies
+              hash: 18d9758ffb6cf0ce16f3870aa64ffe40c6d3ce5d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.4
+          title: ""
+          date: 2024-06-24T20:52:38.559Z
+        - commits:
+            - subject: Correctly type that all properties are selected with a missing $select
+              hash: 935e630afd429790fa133cdbf7e2012ac491b969
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.3
+          title: ""
+          date: 2024-06-20T10:36:12.898Z
+        - commits:
+            - subject: Improve $orderby typings when not providing a model
+              hash: 00c8ea6b5281f4d928d73cbe4427239a4ab3e6d8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.2
+          title: ""
+          date: 2024-06-19T11:41:35.544Z
+        - commits:
+            - subject: Correctly type the `POST` result as being fully deferred
+              hash: 1055a00e740dd2cbf3e418408bed6c5f89b8db0f
+              body: >
+                Previously it did not state so the expanded versions were
+                available in
+
+                the typings even though the result would never actually include
+                them
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.1
+          title: ""
+          date: 2024-06-17T16:15:56.769Z
+        - commits:
+            - subject: Add support for using model specific typings
+              hash: 1077e19ef18cc4cede4d6401496a016fef459150
+              body: >
+                This requires passing the model typings when creating the
+                pinejs-client
+
+                instance and will mean that any usage after that will be type
+                checked
+
+                to limit to resources/properties that exist on the model. This
+                covers
+
+                almost all usage but there are some cases we cannot cover as we
+                would
+
+                need typescript support for partial inference of generics, eg
+                for
+
+                lambdas, or to make major changes to the querying interface.
+
+                This work should also be fully backwards compatible such that if
+                you do
+
+                not provide model typings then all typings should continue to
+                work as
+
+                previously
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.15.0
+          title: ""
+          date: 2024-06-14T10:45:40.382Z
+        - commits:
+            - subject: Deprecate passing `url` to helper functions
+              hash: 5ad1d4a417e2631d70acf7192b7132366a77be3b
+              body: >
+                The intention is that these are use as helpers functions to
+                build the
+
+                url from an object and so passing a `url` directly is not really
+                the
+
+                intent and interferes with improving the typings for the
+                intended case.
+
+                It is still possible to pass urls directly to the `request`
+                function if
+
+                it is essential but the true answer is to support building those
+                urls,
+
+                and using `prepare` if it is necessary
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.14.13
+          title: ""
+          date: 2024-06-12T13:09:45.863Z
+        - commits:
+            - subject: Type `upsert` and `getOrCreate` as not accepting a `url`
+              hash: f5261feec2d9fd45bb52885d0aed9482f743df5a
+              body: >
+                This is because they are not designed to support using a `url`
+                and are
+
+                likely to break in very weird and unexpected ways, and as such
+                removing
+
+                it from the typing should reduce potential for surprising errors
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.14.12
+          title: ""
+          date: 2024-06-12T11:12:46.444Z
+        - commits:
+            - subject: Include comments in generated output so that jsdoc is available
+              hash: 0a20be620a68b92ef95ce735eeebe3de0d754b7f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.14.11
+          title: ""
+          date: 2024-06-11T15:00:11.283Z
+        - commits:
+            - subject: "Tests: improve typing of tests"
+              hash: d970b64c9400e11ee55c29f16fe489c45b16a957
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.14.10
+          title: ""
+          date: 2024-06-11T01:32:26.832Z
+        - commits:
+            - subject: Add `$filter` to nested `$count` typings
+              hash: 2774bd0e8b03d6d204df41c2d4ebf3a9d039057e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.14.9
+          title: ""
+          date: 2024-06-10T15:33:59.941Z
+        - commits:
+            - subject: "Tests: remove unnecessary/unintended returns"
+              hash: b51e379e6a5b1c6cbc5cb83d6dcf537bc6776b05
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-6.14.8
+          title: ""
+          date: 2024-06-10T13:36:27.251Z
+  version: 1.1.0
+  title: ""
+  date: 2025-09-16T15:59:49.956Z
+- commits:
     - subject: Update dependency mocha to v11
       hash: 47cde9ff02afb25ab8a826be224a070fc1e56916
       body: |
