@@ -38,26 +38,26 @@
     "prepare": "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
   },
   "devDependencies": {
-    "@balena/lint": "^8.0.2",
+    "@balena/lint": "^8.2.8",
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-node-resolve": "^7.1.3",
-    "@types/chai": "^4.3.16",
+    "@types/chai": "^4.3.20",
     "@types/chai-as-promised": "^7.1.8",
-    "@types/mocha": "^10.0.0",
+    "@types/mocha": "^10.0.10",
     "balena-config-karma": "^4.0.2",
-    "chai": "^4.4.1",
+    "chai": "^4.5.0",
     "chai-as-promised": "^7.1.2",
     "fetch-ponyfill": "^7.1.0",
-    "husky": "^9.0.11",
-    "karma": "^6.0.0",
-    "lint-staged": "^16.0.0",
-    "mocha": "^11.0.0",
-    "rollup": "^2.79.1",
+    "husky": "^9.1.7",
+    "karma": "^6.4.4",
+    "lint-staged": "^16.1.6",
+    "mocha": "^11.7.2",
+    "rollup": "^2.79.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.9.2"
   },
   "dependencies": {
-    "pinejs-client-core": "^6.14.7"
+    "pinejs-client-core": "^6.15.11"
   },
   "versionist": {
     "publishedAt": "2025-08-01T04:56:42.454Z"
