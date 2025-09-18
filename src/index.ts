@@ -29,12 +29,15 @@ export default class PineFetch<
 		url: string;
 		body?: AnyObject;
 	} & AnyObject) {
-		const normalizedBody =
-			body == null
-				? null
-				: typeof body === 'object'
-					? JSON.stringify(body)
-					: body;
+		let normalizedBody: string | undefined;
+		if (body != null && typeof body === 'object') {
+			// If body is an object then JSON.stringify it and set the matching content-type header
+			options.headers ??= {};
+			options.headers['Content-Type'] = 'application/json';
+			normalizedBody = JSON.stringify(body);
+		} else {
+			normalizedBody = body;
+		}
 
 		const response = await fetch(url, {
 			...options,
