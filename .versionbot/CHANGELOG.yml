@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix missing content-type header with JSON bodies
+      hash: f05d0d3a0e4b3a0bc7caee90394132f4a3e873d6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 2.0.1
+  title: ""
+  date: 2025-09-18T12:50:15.416Z
+- commits:
     - subject: Drop support for overriding the fetch implementation, requiring native
         fetch
       hash: 32e24c777556be72eb55518abd8116fb76fd4e5c
