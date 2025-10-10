@@ -1,16 +1,20 @@
 import type { AnyObject, Resource, AnyResource } from 'pinejs-client-core';
-import { PinejsClientCore } from 'pinejs-client-core';
+import { PinejsClientCore, StatusError } from 'pinejs-client-core';
 export type { PinejsClientCore } from 'pinejs-client-core';
 
-export class RequestError extends Error {
+export class RequestError extends StatusError {
 	public code = 'PineClientFetchRequestError';
+	public status: number;
 
 	constructor(
-		public body: string,
-		public status: number,
-		public responseHeaders: object,
+		body: string,
+		statusCode: number,
+		public responseHeaders: Headers,
 	) {
-		super(`Request error: ${body}`);
+		super(`Request error: ${body}`, statusCode);
+		// This is for backwards compatibility of pinejs-client-fetch users however
+		// `statusCode` is what is expected by pinejs-client-core
+		this.status = statusCode;
 	}
 }
 
