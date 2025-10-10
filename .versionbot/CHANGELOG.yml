@@ -1,4 +1,48 @@
 - commits:
+    - subject: Sub-class the `StatusError` for errors as pinejs-client-core expects
+      hash: 2fec367327c459332c4e288bee6903aca068e567
+      body: |
+        This fixes the built in retry handler and increase standardization
+        across implementations
+
+        Update pinejs-client-core from 8.3.2 to 8.4.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: Add a `StatusError` class that downstream is expected to use for errors
+              hash: 5c589f1ddb12ffac87c13d3daed2bda09d386378
+              body: >
+                This isn't enforced currently but it will help to standardize
+                errors
+
+                across implementations and make it easier to switch between them
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-8.4.0
+          title: ""
+          date: 2025-10-10T16:59:39.572Z
+        - commits:
+            - subject: "Types: make use of inference for some simplification"
+              hash: 9622554854b58352a581300d7a6cf97b156d2a9a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: pinejs-client-js-8.3.3
+          title: ""
+          date: 2025-10-10T13:05:32.557Z
+  version: 2.0.3
+  title: ""
+  date: 2025-10-10T17:12:31.921Z
+- commits:
     - subject: Avoid issues with non-JSON responses
       hash: 99016316d88ecaca7c96e6e25acd427eef94d459
       body: ""
