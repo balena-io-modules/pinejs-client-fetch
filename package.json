@@ -54,7 +54,7 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "pinejs-client-core": "^8.3.2"
+    "pinejs-client-core": "^8.4.0"
   },
   "versionist": {
     "publishedAt": "2025-10-10T15:02:13.187Z"
