@@ -44,15 +44,24 @@ export default class PineFetch<
 			body: normalizedBody,
 		});
 
-		if (response.status >= 400) {
-			let responseBody = 'Unknown error';
-			try {
-				responseBody = await response.text();
-			} catch {
-				// empty
-			}
-			throw new RequestError(responseBody, response.status, response.headers);
+		let responseBody;
+		try {
+			// Fetch the response as text
+			responseBody = await response.text();
+			// And then try to parse it as JSON as it is likely to be JSON
+			responseBody = JSON.parse(responseBody);
+			// TODO: base this upon the returned content-type header
+		} catch {
+			// empty
 		}
-		return await response.json();
+
+		if (response.status >= 400) {
+			throw new RequestError(
+				responseBody ?? 'Unknown error',
+				response.status,
+				response.headers,
+			);
+		}
+		return responseBody;
 	}
 }
