@@ -1,4 +1,16 @@
 - commits:
+    - subject: Avoid issues with non-JSON responses
+      hash: 99016316d88ecaca7c96e6e25acd427eef94d459
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 2.0.2
+  title: ""
+  date: 2025-10-10T15:02:13.093Z
+- commits:
     - subject: Fix missing content-type header with JSON bodies
       hash: f05d0d3a0e4b3a0bc7caee90394132f4a3e873d6
       body: ""
