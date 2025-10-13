@@ -11,7 +11,7 @@ export class RequestError extends StatusError {
 		statusCode: number,
 		public responseHeaders: Headers,
 	) {
-		super(`Request error: ${body}`, statusCode);
+		super(body, statusCode);
 		// This is for backwards compatibility of pinejs-client-fetch users however
 		// `statusCode` is what is expected by pinejs-client-core
 		this.status = statusCode;
