@@ -1,4 +1,16 @@
 - commits:
+    - subject: Leave the error message as-is to stay closer to other implementations
+      hash: a658061024c6e9fbed715d22d95240446e2091fb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 2.0.4
+  title: ""
+  date: 2025-10-13T12:13:01.519Z
+- commits:
     - subject: Sub-class the `StatusError` for errors as pinejs-client-core expects
       hash: 2fec367327c459332c4e288bee6903aca068e567
       body: |
