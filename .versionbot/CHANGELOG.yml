@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix year and owner in license
+      hash: d6e3f9b1855bb14370ae9b7b57dbbc3e406ad1f0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 2.0.24
+  title: ""
+  date: 2026-05-13T01:28:08.356Z
+- commits:
     - subject: Update dependency lint-staged to v17
       hash: d9553cc550982166e96ee6db0e300737b458b0d1
       body: |
