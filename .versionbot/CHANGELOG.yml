@@ -1,4 +1,17 @@
 - commits:
+    - subject: Pin dependencies
+      hash: 5d99381e46f35fcbe0fed9d044a4505027018614
+      body: |
+        Update @swc-node/register
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.0.25
+  title: ""
+  date: 2026-06-10T14:12:58.085Z
+- commits:
     - subject: Fix year and owner in license
       hash: d6e3f9b1855bb14370ae9b7b57dbbc3e406ad1f0
       body: ""
