@@ -39,19 +39,19 @@
   },
   "devDependencies": {
     "@balena/lint": "^9.3.6",
-    "@swc-node/register": "^1.11.1",
-    "@swc/core": "^1.13.5",
-    "@types/chai": "^5.2.2",
-    "@types/chai-as-promised": "^8.0.2",
-    "@types/mocha": "^10.0.10",
-    "balena-config-karma": "^4.0.2",
-    "chai": "^6.0.1",
-    "chai-as-promised": "^8.0.2",
-    "husky": "^9.1.7",
-    "karma": "^6.4.4",
-    "lint-staged": "^17.0.0",
-    "mocha": "^11.7.2",
-    "typescript": "^5.9.2"
+    "@swc-node/register": "1.11.1",
+    "@swc/core": "1.15.41",
+    "@types/chai": "5.2.3",
+    "@types/chai-as-promised": "8.0.2",
+    "@types/mocha": "10.0.10",
+    "balena-config-karma": "4.0.3",
+    "chai": "6.2.2",
+    "chai-as-promised": "8.0.2",
+    "husky": "9.1.7",
+    "karma": "6.4.4",
+    "lint-staged": "17.0.7",
+    "mocha": "11.7.6",
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "pinejs-client-core": "^8.4.0"
