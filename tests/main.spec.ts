@@ -5,7 +5,7 @@ chai.use(chaiAsPromised);
 
 import type { TestSuiteContext } from './setup.ts';
 import { givenAPineClient } from './setup.ts';
-import type { AnyObject } from './common.ts';
+import type { AnyObject } from 'pinejs-client-core';
 
 describe('pinejs-client-fetch', function () {
 	this.timeout(10 * 1000);
