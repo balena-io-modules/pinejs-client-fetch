@@ -1,7 +1,11 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"rootDir": "."
+		"rootDir": ".",
+		"allowImportingTsExtensions": true,
+		"types": [
+			"mocha"
+		]
 	},
 	"include": [
 		"src/**/*",
