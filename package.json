@@ -1,6 +1,6 @@
 {
   "name": "pinejs-client-fetch",
-  "version": "2.0.26",
+  "version": "2.0.27",
   "description": "This module provides the nodejs interface for the pinejs API using request.",
   "type": "module",
   "main": "build/index.js",
@@ -57,6 +57,6 @@
     "pinejs-client-core": "^8.4.0"
   },
   "versionist": {
-    "publishedAt": "2026-06-11T05:42:22.541Z"
+    "publishedAt": "2026-06-18T13:06:19.443Z"
   }
 }

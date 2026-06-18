@@ -1,4 +1,24 @@
 - commits:
+    - subject: "Tests: fix tsconfig checks"
+      hash: 93b15a2de6297a700c167f494ceb8d1049e4560c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+    - subject: "Tests: reuse `AnyObject` from pinejs-client-core rather than redefining"
+      hash: 55e7edd734d9b7f9b2485f4d1ff73731d15463a2
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 2.0.27
+  title: ""
+  date: 2026-06-18T13:06:19.325Z
+- commits:
     - subject: Update typescript to v6
       hash: a7897fbc4030f8cb776cbf93aa885c5a12cfb1f2
       body: ""
