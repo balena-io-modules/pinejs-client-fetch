@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency @swc/core to v1.15.43
+      hash: 1d14690747e17035af63c70066cdffc60c112ac8
+      body: |
+        Update @swc/core from 1.15.41 to 1.15.43
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.0.28
+  title: ""
+  date: 2026-06-27T00:22:09.523Z
+- commits:
     - subject: "Tests: fix tsconfig checks"
       hash: 93b15a2de6297a700c167f494ceb8d1049e4560c
       body: ""
