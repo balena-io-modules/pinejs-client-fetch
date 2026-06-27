@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency lint-staged to v17.0.8
+      hash: 1d68ab1a099d36e3e69de3f6d2a7bc44a4be5e28
+      body: |
+        Update lint-staged from 17.0.7 to 17.0.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.0.29
+  title: ""
+  date: 2026-06-27T01:40:30.236Z
+- commits:
     - subject: Update dependency @swc/core to v1.15.43
       hash: 1d14690747e17035af63c70066cdffc60c112ac8
       body: |
