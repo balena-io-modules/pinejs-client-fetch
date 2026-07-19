@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency @swc-node/register to v1.12.0
+      hash: d39698785defcd4b95c6acf1134f1f6056606e95
+      body: |
+        Update @swc-node/register from 1.11.1 to 1.12.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.0.30
+  title: ""
+  date: 2026-07-19T09:33:46.041Z
+- commits:
     - subject: Update dependency lint-staged to v17.0.8
       hash: 1d68ab1a099d36e3e69de3f6d2a7bc44a4be5e28
       body: |
