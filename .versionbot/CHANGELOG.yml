@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency @swc/core to v1.15.47
+      hash: 16571142f6ecbcf519bf4be5c2f0987a8aacde4a
+      body: |
+        Update @swc/core from 1.15.46 to 1.15.47
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.1.1
+  title: ""
+  date: 2026-08-01T14:30:00.685Z
+- commits:
     - subject: Update pinejs-client-core to 8.5.29
       hash: c994e8dde3de1476f9a42df1fba1a7a91b409278
       body: |
