@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency @swc/core to v1.16.1
+      hash: 65df0f50d55ef1ba999dedaf36ce3ca2d60c4791
+      body: |
+        Update @swc/core from 1.16.0 to 1.16.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.1.5
+  title: ""
+  date: 2026-08-22T07:13:36.232Z
+- commits:
     - subject: Update dependency @swc/core to v1.16.0
       hash: 67ec4bce332487af906c3c0fe588f9e97f42c992
       body: |
