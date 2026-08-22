@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency @swc/core to v1.16.0
+      hash: 67ec4bce332487af906c3c0fe588f9e97f42c992
+      body: |
+        Update @swc/core from 1.15.47 to 1.16.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.1.4
+  title: ""
+  date: 2026-08-22T00:10:19.870Z
+- commits:
     - subject: Update dependency mocha to v11.8.0
       hash: e246b0fb927e3cfc4fbd0c3d8c09af1b20bd1268
       body: |
