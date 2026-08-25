@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency flowzonify to v0.4.0
+      hash: 491bc640281ad1741c881fc850064977bf4166eb
+      body: |
+        Update flowzonify from 0.0.0 to 0.4.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.1.6
+  title: ""
+  date: 2026-08-25T11:15:34.716Z
+- commits:
     - subject: Update dependency @swc/core to v1.16.1
       hash: 65df0f50d55ef1ba999dedaf36ce3ca2d60c4791
       body: |
