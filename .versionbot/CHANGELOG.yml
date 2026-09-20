@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency mocha to v12.0.2
+      hash: c629af0bffe13d055483dec1f630e78f26d6a45c
+      body: |
+        Update mocha from 12.0.1 to 12.0.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.1.12
+  title: ""
+  date: 2026-09-20T15:02:02.889Z
+- commits:
     - subject: Update dependency mocha to v12
       hash: ddf5f5382dc0a56895e2aae48cd99c8186f14802
       body: |
