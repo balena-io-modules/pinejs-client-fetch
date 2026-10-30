@@ -29,9 +29,9 @@
   },
   "scripts": {
     "build": "tsc",
-    "lint": "balena-lint -t tsconfig.dev.json src tests",
+    "lint": "balena-lint -t tsconfig.dev.json src tests && tsc --noEmit --project ./tests/tsconfig.json",
     "lint-fix": "balena-lint -t tsconfig.dev.json --fix src tests",
-    "test:node": "mocha --require @swc-node/register/esm-register --reporter spec tests/**/*.spec.ts",
+    "test:node": "mocha --reporter spec 'tests/**/*.spec.ts'",
     "test:browser": "karma start",
     "test": "npm run build && npm run test:node && npm run test:browser && npm run lint",
     "prepack": "npm run build",
@@ -39,8 +39,6 @@
   },
   "devDependencies": {
     "@balena/lint": "^9.4.6",
-    "@swc-node/register": "1.12.1",
-    "@swc/core": "1.16.20",
     "@types/chai": "5.2.3",
     "@types/chai-as-promised": "8.0.2",
     "@types/mocha": "10.0.10",
