@@ -1,4 +1,17 @@
 - commits:
+    - subject: "Tests: switch from @swc-node/register to node type stripping"
+      hash: ccf41773a168a6c27c8180bb3d2c173b7baa6bf8
+      body: |
+        https://balena.fibery.io/Work/Project/3059
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 2.1.20
+  title: ""
+  date: 2026-10-30T11:39:19.826Z
+- commits:
     - subject: Update dependency @swc/core to v1.16.20
       hash: 631c0f912c42e00433454362632d3da15f497b7a
       body: |
