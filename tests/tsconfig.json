@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.dev.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"erasableSyntaxOnly": true,
+		"verbatimModuleSyntax": true
+	},
+	"include": [
+		"**/*"
+	]
+}
